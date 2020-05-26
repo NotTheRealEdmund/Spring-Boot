@@ -1,0 +1,20 @@
+Java Spring Boot Web App
+
+Go to start.spring.io and create a Java Spring Boot project
+Project: Maven
+Language: Java
+Version: 2.3.0
+Dependencies: Spring Web
+Group: com.tutorial
+Artifact: example
+Package name: com.tutorial.example
+Leave the rest blank
+Packaging: Jar
+Java: 8
+
+Once the zip file is generated and extracted, open with VScode
+Under src > main > resources, you'll see a file called application.properties
+In the application.properties, declare the server port the web app will be exposed to, default is 8080, we'll use 9898
+In the Application.java class, make sure there's @SpringBootApplication and @RestController
+Then you can use @GetMapping("/") to add routes, strings returned in the function after it will be shown in the website
+When you run the main function, you can go to localhost:9898 to see changes
